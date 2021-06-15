@@ -1,0 +1,66 @@
+  
+:root {
+    --primary: #2860c9;
+    --secondary: #2754A8;
+    --thrid: #F57E69;
+    --background: rgb(255, 254, 254);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background)!important;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 450px;
+    padding: 45px;
+    margin: auto;
+    background-color: white;
+}
+
+form {
+    display: block;
+}
+
+.navbar {
+    background-color: var(--primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus,
+.btn:active,
+.btn:hover {
+    box-shadow: none!important;
+    outline: 0;
+}
+
+#videoContent {
+    height: 600px;
+    background-color: rgb(180, 174, 174) !important;
+}
+
+img {
+    width: 50%;
+}
+
+#class-card {
+    background-color: var(--secondary) !important;
+    font-weight: bold;
+    font-size: 18px !important;
+}
+
+#submitBtn {
+    background-color: var(--primary) !important;
+}
+
+.pagination li a {
+    background-color: var(--thrid) !important;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="./index.html">中途補習班</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse fs-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./course_list.html">課程列表</a>
+                    </li>
+                    <div class="dropdown-divider"></div>
+                </ul>
+                <ul class="navbar-nav me-end mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link ">登出</a>
+                        <!-- <a class="nav-link ">登出</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- container -->
+    <div class="container-fluid container text-center">
+        <div class="row">
+            <div class="mt-4">
+                <button id="class-card" class="btn text-nowrap text-light m-2 p-2 float-start">	線性代數 </button>
+                <button id="class-card" class="btn text-nowrap text-light m-2 p-2 float-start">應用英文(四) </button>
+                <button id="class-card" class="btn text-nowrap text-light m-2 p-2 float-start">	演算法 </button>
+                <button id="class-card" class="btn text-nowrap text-light m-2 p-2 float-start">	行動程設 </button>
+                <button id="class-card" class="btn text-nowrap text-light m-2 p-2 float-start"> 進階CPP </button>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination nav">
+                    <!-- for in list -->
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">1-1 (2/15)</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">2</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">3</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">4</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">5</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">1</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">2</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">3</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">4</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">5</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">1</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">2</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">3</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">4</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">5</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">1</a></li>
+                    <li class="m-2"><a class="btn text-nowrap text-light " href="#!">2</a></li>
+                    <!-- end for  -->
+                </ul>
+            </nav>
+
+            <div id="videoContent" class="container mt-3 p-3 text-center ">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    <!-- <script>
+        var player;
+        player = new YT.Player('YouTubeVideoPlayerAPI', {
+          videoId: 'YouTube ID',   // YouTube 影片ID
+          width: '1080',            // 播放器寬度 (px)
+          height: '720',           // 播放器高度 (px)
+          playerVars: {
+            autoplay: 1,            // 自動播放影片
+            controls: 0,            // 顯示播放器
+            showinfo: 0,            // 隱藏影片標題
+            modestbranding: 0,      // 隱藏YouTube Logo
+            loop: 1,                // 重覆播放
+            playlist:'YouTube ID', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+            fs: 0,                  // 隱藏全螢幕按鈕
+            cc_load_policty: 0,     // 隱藏字幕
+            iv_load_policy: 3,      // 隱藏影片註解
+            autohide: 0             // 影片播放時，隱藏影片控制列
+          },
+          events: {
+            onReady: function(e) {
+              e.target.mute();      //播放時靜音
+              e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+            }
+          }
+        });
+       
+    </script> -->
+</body>
+
+</html>
